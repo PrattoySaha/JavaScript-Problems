@@ -1,0 +1,23 @@
+<!-- *7. Write a JS program to input a number as a variable and find the sum of the first and last digit of the number using a loop.
+input: 11114
+answer: 5 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>find the sum of the first and last digit of the number</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	
+	    var num = parseInt(prompt("Enter the number:"));
+        var lastDigit = num % 10;
+        while (num >= 10) {
+          num = parseInt(num / 10) ;
+        }
+        var result = lastDigit + num;
+        document.write("The sum of  first and last digit is: " + result);
+
+</script>
+</html>

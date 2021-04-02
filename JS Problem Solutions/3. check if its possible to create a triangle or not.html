@@ -1,0 +1,20 @@
+<!-- 3. Write a JS program to input sides of a triangle and check if its possible to create a triangle or not.  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check if its possible to create a triangle or not</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var side1 = parseFloat(prompt("Enter side 1: "));
+	var side2 = parseFloat(prompt("Enter side 2: "));
+	var side3 = parseFloat(prompt("Enter side 3: "));
+
+	if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1)
+         document.write("Triangle possible");
+    else
+         document.write("Triangle impossible");
+</script>
+</html>

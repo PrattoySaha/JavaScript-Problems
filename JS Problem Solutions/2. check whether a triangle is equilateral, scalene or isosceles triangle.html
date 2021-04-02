@@ -1,0 +1,28 @@
+<!-- 2. Write a JS program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle using if else.  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>triangle is equilateral, scalene or isosceles</title>
+</head>
+<body>
+
+</body>
+
+<script type="text/javascript">
+	var side1 = parseFloat(prompt("Enter side 1: "));
+	var side2 = parseFloat(prompt("Enter side 2: "));
+	var side3 = parseFloat(prompt("Enter side 3: "));
+
+    // Check for equilateral triangle
+    if (side1 == side2 && side2 == side3)
+    	document.write("Equilateral Triangle");
+
+    // Check for isoceles triangle
+    else if (side1 == side2 || side2 == side3 || side3 == side1)
+    	document.write("Isoceles Triangle");
+
+    // Otherwise scalene triangle
+    else
+    	document.write("Scalene Triangle");
+</script>
+</html>

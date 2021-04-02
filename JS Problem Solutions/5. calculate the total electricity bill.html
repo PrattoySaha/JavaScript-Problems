@@ -1,0 +1,44 @@
+<!-- *5. Write a JS program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+For the first 50 units Taka. 0.50/unit
+For the next 100 units, Taka. 0.75/unit
+For the next 100 units, Taka. 1.20/unit
+For units above 250 Taka. 1.50/unit
+An additional surcharge of 20% is added to each bill.
+
+ -->
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>calculate the total electricity bill</title>
+ </head>
+ <body>
+ 
+ </body>
+ <script type="text/javascript">
+ 	var bill;
+ 	var unit = parseFloat(prompt("Enter unit: "));
+ 	if(unit<=50){
+ 		bill=50*0.5;
+ 	}
+
+ 	else if(unit<=150){
+ 		bill=(50*0.5)+((150-unit)*0.75);
+ 	}
+
+ 	else if(unit<=250){
+ 		bill=(50*0.5)+(100*0.75)+((250-unit)*1.20);
+ 	}
+
+ 	else if(unit>250){
+ 		bill=(50*0.5)+(100*0.75)+(100*1.20)+((unit-250)*1.50);
+ 	}
+ 	bill= bill+((bill*20)/100);
+
+
+
+
+ 	document.write("Total bill: "+ bill +" Taka");
+
+ </script>
+ </html>

@@ -1,0 +1,26 @@
+<!-- *6.  Write a JS program to input a number in a variable and count the number of digits in the given integer and find out the sum of the all digits using a loop. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>count and find out the sum of the all digits</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var number =  prompt("Enter number: ");
+
+	var sum=0;
+	
+ 
+      while (number != 0) {
+        sum = sum + number % 10;
+        number = parseInt(number / 10);
+    }
+    // document.write("total digits:"+n);
+    document.write("some of digits:"+sum);
+
+
+</script>
+</html>
